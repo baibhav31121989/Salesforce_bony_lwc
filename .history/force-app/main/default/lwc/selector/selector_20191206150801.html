@@ -1,0 +1,26 @@
+<!--
+  @File Name          : selector.html
+  @Description        : 
+  @Author             : Baibhav Kumar
+  @Group              : 
+  @Last Modified By   : Baibhav Kumar
+  @Last Modified On   : 12/6/2019, 3:08:01 PM
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    12/6/2019   Baibhav Kumar     Initial Version
+-->
+<template>
+    <div class="wrapper">
+    <header class="header">Available Bikes for {name}</header>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <c-list onproductselected={handleProductSelected}></c-list>
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={selectedProductId}></c-detail>
+        </aside>
+        </div>
+    </section>
+    </div>
+</template>

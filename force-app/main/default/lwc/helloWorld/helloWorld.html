@@ -1,0 +1,19 @@
+<!--
+  @File Name          : helloWorld.html
+  @Description        : 
+  @Author             : Baibhav Kumar
+  @Group              : 
+  @Last Modified By   : Baibhav Kumar
+  @Last Modified On   : 10/10/2019, 10:26:36 PM
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    10/10/2019   Baibhav Kumar     Initial Version
+-->
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting}!</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
